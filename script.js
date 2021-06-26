@@ -244,6 +244,12 @@
 // ********** EJERCICIO 13 **********
 // Realizar un programa que pida un número y diga todos sus divisores. (Se verifica que un número es divisor del otro cuando el resto de dividir por ese número es 0.)
 
+// let num = parseInt(prompt("Ingrese un número para conocer sus divisores:"));
+// while (num%2 === 0) {
+    // num = num/2; 
+    // console.log(num);
+// }
+
 
 
 
@@ -256,10 +262,47 @@
 // L
 // A
 
+// let texto = prompt("Ingrese un texto");
+// let may = texto.toUpperCase();
+// console.log(may);
+// let num = parseInt(prompt("Ingrese un número para ver los caracteres presentes en el texto hasta dicho número:"));
+// for (i=0; i<num; i++) {
+    // console.log(may.charAt(i));
+// }
+
+
+
+
+
 
 
 // ********** EJERCICIO 15 **********
 // Solicitar al usuario que ingrese una lista de supermercado y al final mostrar todos los items separados por comas. 
+
+// let total = "";
+// let item = "";
+// let flag = true;
+// let long;
+// let string = "";
+// 
+// while (flag) {
+    // item = prompt("Ingrese el/los artículo/s uno a uno. Presione '0' para terminar");
+    // console.log(item);
+    // if (item == 0) {
+        // flag = false;
+    // } else {
+        // total = total + item + ", ";
+        // console.log(total);
+        // long = total.length;
+        // console.log(long);
+        // string = total.slice(0,(long-2));
+        // console.log(string);
+    // }    
+// }
+// alert(string);
+
+
+
 
 
 
@@ -269,7 +312,22 @@
 // ********** EJERCICIO 16 **********
 // Solicitar al usuario que ingrese números. Finalizar cuando ingrese un número múltiplo de 3. Mostrar todos los números ingresados
 
-
+let string = "";
+let string2 = "";
+let caja = "";
+let caja2 = "";
+let numUser = 1;
+while (numUser%3 !== 0) {
+    numUser = parseInt(prompt("Ingrese un número para saber si es múltiplo de 3:"));
+    console.log(numUser);
+    string = numUser.toString();
+    console.log(string);
+    caja = caja + string + " ";    
+}
+if (numUser%3 === 0) {
+    alert(numUser + " " + "es es múltiplo de 3");
+}
+alert("El/los número/s ingresado/s fue/fueron: " + caja);
 
 
 
